@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter for You ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Floating Hearts Background -->
+        <div class="hearts-bg">
+            <div class="heart heart-1">💓</div>
+            <div class="heart heart-2">💓</div>
+            <div class="heart heart-3">💓</div>
+            <div class="heart heart-4">💓</div>
+            <div class="heart heart-5">💓</div>
+            <div class="heart heart-6">💓</div>
+        </div>
+
+        <!-- Stage 1: Envelope -->
+        <div id="envelope-stage" class="stage active">
+            <div class="envelope-container">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-front"></div>
+                    <div class="envelope-flap" id="envelope-flap"></div>
+                    <div class="envelope-seal">
+                        <div class="wax-seal">❤️</div>
+                    </div>
+                </div>
+                <div class="envelope-text">
+                    <h1>You have a special letter waiting...</h1>
+                    <p>Click the envelope to open it</p>
+                    <div class="sparkles">
+                        <span class="sparkle">✨</span>
+                        <span class="sparkle">✨</span>
+                        <span class="sparkle">✨</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stage 2: Letter -->
+        <div id="letter-stage" class="stage">
+            <div class="letter-container">
+                <div class="letter" id="letter">
+                    <div class="letter-header">
+                        <div class="date">Today ❤️</div>
+                    </div>
+                    <div class="letter-content">
+                        <h2>My Dearest,</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        
+                        <div class="letter-closing">
+                            <p>Forever and always yours,</p>
+                            <div class="signature">With all my love 💕</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="continue-btn" class="continue-btn">Continue Reading ❤️</button>
+            </div>
+        </div>
+
+        <!-- Stage 3: Flower Bouquet -->
+        <div id="flowers-stage" class="stage">
+            <div class="flowers-container">
+                <div class="bouquet" id="bouquet">
+                    <div class="flower flower-1">🌹</div>
+                    <div class="flower flower-2">🌹</div>
+                    <div class="flower flower-3">🌹</div>
+                    <div class="flower flower-4">🌹</div>
+                    <div class="flower flower-5">🌹</div>
+                    <div class="flower flower-6">🌹</div>
+                    <div class="flower flower-7">🌹</div>
+                    <div class="bow">🎀</div>
+                </div>
+                <div class="final-message">
+                    <h2>These flowers are for you, my love!</h2>
+                    <p>Just like these flowers bloom, my love for you grows stronger every day.</p>
+                    <div class="love-stats">
+                        <div class="stat">
+                            <span class="number" data-target="365">0</span>
+                            <span class="label">Days of loving you</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-target="8760">0</span>
+                            <span class="label">Hours of thinking about you</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-target="∞">0</span>
+                            <span class="label">Reasons why I love you</span>
+                        </div>
+                    </div>
+                    <button id="restart-btn" class="restart-btn">Read Again 💓</button>
+                </div>
+            </div>
+        </div>
+
+       
+        <audio id="page-turn" preload="auto">
+            <source src="data:audio/wav;base64,UklGRvQDAABXQVZFZm10IAAAAAABAAABAE4sAABcWAAABAAAAAEAEABkYXRh0AMAAJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJi=" type="audio/wav">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
